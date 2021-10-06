@@ -13,7 +13,7 @@ const Map = () => {
     });
 
     return (
-        <div id="map" ref={ref} style={{ width: '100vw', height: '100vh' }}>
+        <div data-testid="map" id="map" ref={ref} style={{ width: '100vw', height: '100vh' }}>
         </div>
     )
 }
