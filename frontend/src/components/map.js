@@ -5,10 +5,12 @@ const Map = () => {
     const ref = useRef();
 
     useEffect(() => {
-        const zoom = 3;
+        const zoom = 4.5;
+        const minZoom = 4.5;
         new window.google.maps.Map(ref.current, {
-            center: {lat: 41.850033, lng:-87.6500523},
+            center: new window.google.maps.LatLng(39.809734, -98.555620),
             zoom,
+            minZoom,
         });
     });
 
